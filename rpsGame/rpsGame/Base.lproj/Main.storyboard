@@ -85,9 +85,12 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="가위">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rpsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ryj-N1-BUN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOf-6g-QTC">
                                         <rect key="frame" x="127.66666666666666" y="0.0" width="117.66666666666666" height="117.66666666666667"/>
@@ -97,9 +100,12 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="바위">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rpsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FGe-LW-DEG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeL-Sn-T7U">
                                         <rect key="frame" x="255.33333333333329" y="0.0" width="117.66666666666666" height="117.66666666666667"/>
@@ -109,9 +115,12 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="보">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rpsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tUi-bK-2ad"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -130,6 +139,9 @@
                                         <state key="normal" title="RESET">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rpsReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IvE-OO-kTR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jD3-Ox-cps">
                                         <rect key="frame" x="191.66666666666663" y="0.0" width="181.33333333333337" height="40"/>
@@ -139,6 +151,9 @@
                                         <state key="normal" title="SELECT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rpsSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gWg-Le-TMz"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -162,6 +177,13 @@
                             <constraint firstItem="i0S-rZ-kK4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="zg6-jG-3HI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="comChoiceImage" destination="8PM-4a-p8T" id="UKT-Ev-Mye"/>
+                        <outlet property="comChoiceLabel" destination="IMC-wo-Gkg" id="lu0-Ee-7hI"/>
+                        <outlet property="myChoiceImage" destination="c4A-gx-CQ6" id="1zE-UC-VkN"/>
+                        <outlet property="myChoiceLabel" destination="hBg-VK-8Cu" id="hlY-Oy-wpy"/>
+                        <outlet property="rpsResult" destination="9Zx-i2-Pg1" id="WbK-ns-Yz8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
